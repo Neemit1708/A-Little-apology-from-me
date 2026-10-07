@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Apology From Me ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        linear-gradient(rgba(255,248,247,0.88), rgba(255,248,247,0.88)),
+        url("a_romantic_cozy_scrapbook_style_apology_letter_w.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #503d42;
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    opacity: 0;
+    animation: floatHeart linear infinite;
+}
+
+.heart:nth-child(1) {
+    left: 8%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(2) {
+    left: 22%;
+    animation-duration: 15s;
+    animation-delay: 5s;
+}
+
+.heart:nth-child(3) {
+    left: 40%;
+    animation-duration: 13s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(4) {
+    left: 60%;
+    animation-duration: 17s;
+    animation-delay: 7s;
+}
+
+.heart:nth-child(5) {
+    left: 78%;
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(6) {
+    left: 91%;
+    animation-duration: 18s;
+    animation-delay: 8s;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.55;
+    }
+
+    80% {
+        opacity: 0.35;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 22px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero-card {
+    width: min(850px, 95%);
+
+    padding: 70px 45px;
+
+    background: rgba(255,255,255,0.78);
+
+    border: 1px solid rgba(183,137,145,0.3);
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 25px 70px rgba(103,70,77,0.12);
+
+    position: relative;
+}
+
+/* Tape */
+
+.hero-card::before,
+.hero-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 35px;
+
+    background: rgba(232,207,199,0.65);
+
+    top: -15px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.hero-card::before {
+
+    left: 70px;
+
+    transform: rotate(-7deg);
+}
+
+.hero-card::after {
+
+    right: 70px;
+
+    transform: rotate(7deg);
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.small-title {
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    color: #a47b83;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(55px, 10vw, 105px);
+
+    font-weight: 600;
+
+    color: #6d4650;
+
+    line-height: 1;
+
+    margin-bottom: 28px;
+}
+
+.hero-subtitle {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 26px;
+
+    line-height: 1.6;
+
+    color: #70575d;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.hero-heart {
+
+    font-size: 42px;
+
+    margin-top: 35px;
+
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+}
+
+.scroll {
+
+    margin-top: 45px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #a17d84;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    width: min(900px, 92%);
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* =========================
+   PAPER SECTIONS
+========================= */
+
+section {
+
+    position: relative;
+
+    padding: 85px 60px;
+
+    margin-bottom: 45px;
+
+    background: rgba(255,255,255,0.88);
+
+    border: 1px solid #ead9d8;
+
+    box-shadow:
+        0 20px 50px rgba(99,69,75,0.08);
+
+    border-radius: 3px;
+
+    transform: rotate(-0.25deg);
+}
+
+section:nth-child(even) {
+
+    transform: rotate(0.25deg);
+}
+
+/* Paper corner */
+
+section::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 50%,
+            #f5e5e3 50%
+        );
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(40px, 6vw, 62px);
+
+    font-weight: 600;
+
+    color: #704b54;
+
+    margin-bottom: 32px;
+
+    line-height: 1.1;
+}
+
+h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    color: #795760;
+
+    margin-top: 45px;
+
+    margin-bottom: 20px;
+}
+
+p {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 22px;
+
+    color: #574348;
+}
+
+/* =========================
+   EMPHASIS
+========================= */
+
+.emphasis {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+
+    line-height: 1.45;
+
+    text-align: center;
+
+    color: #744d56;
+
+    margin: 38px 0;
+
+    padding: 28px 20px;
+
+    border-top: 1px solid #ead5d7;
+
+    border-bottom: 1px solid #ead5d7;
+}
+
+.bold {
+
+    font-weight: 600;
+
+    color: #6b4650;
+}
+
+/* =========================
+   PROMISE CARD
+========================= */
+
+.promise-card {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,246,246,0.95),
+            rgba(255,252,250,0.95)
+        );
+
+    border: 1px solid #ead7d8;
+
+    padding: 32px;
+
+    margin-top: 35px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 30px rgba(107,70,78,0.06);
+}
+
+.promise-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px dashed #e5cfd2;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+
+    color: #664850;
+}
+
+.promise-item:last-child {
+
+    border-bottom: none;
+}
+
+.promise-heart {
+
+    color: #b27682;
+
+    font-size: 20px;
+
+    margin-top: 3px;
+}
+
+/* =========================
+   CENTER SECTION
+========================= */
+
+.center {
+
+    text-align: center;
+}
+
+/* =========================
+   FINAL LOVE
+========================= */
+
+.final {
+
+    text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.final-love {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(45px, 7vw, 75px);
+
+    color: #704650;
+
+    margin-bottom: 30px;
+}
+
+.signature {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 36px;
+
+    color: #76515a;
+
+    margin-top: 35px;
+}
+
+.song-line {
+
+    margin-top: 35px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 23px;
+
+    color: #967179;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px 70px;
+
+    color: #a17d84;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 19px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-button {
+
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    border: 1px solid #dfc4c7;
+
+    background: rgba(255,255,255,0.92);
+
+    color: #9b6872;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(80,50,58,0.12);
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+.music-button:hover {
+
+    transform: scale(1.08);
+}
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.reveal.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 650px) {
+
+    .hero-card {
+
+        padding: 65px 25px;
+    }
+
+    .hero-card::before {
+
+        left: 20px;
+    }
+
+    .hero-card::after {
+
+        right: 20px;
+    }
+
+    .hero-subtitle {
+
+        font-size: 22px;
+    }
+
+    section {
+
+        padding: 65px 25px;
+
+        margin-bottom: 30px;
+    }
+
+    p {
+
+        font-size: 16px;
+
+        line-height: 1.9;
+    }
+
+    .emphasis {
+
+        font-size: 27px;
+    }
+
+    .promise-item {
+
+        font-size: 20px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- FLOATING HEARTS -->
+
+<div class="hearts">
+
+    <div class="heart">♡</div>
+    <div class="heart">♡</div>
+    <div class="heart">♥</div>
+    <div class="heart">♡</div>
+    <div class="heart">♥</div>
+    <div class="heart">♡</div>
+
+</div>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="hero-card reveal">
+
+        <div class="small-title">
+            A little piece of my heart
+        </div>
+
+        <h1>
+            For My Baby ❤️
+        </h1>
+
+        <div class="hero-subtitle">
+
+            Some things are easier to write
+            than to say...
+
+            <br>
+
+            So I made this little corner
+            of my heart for you.
+
+        </div>
+
+        <div class="hero-heart">
+            ♡
+        </div>
+
+        <div class="scroll">
+            SCROLL SLOWLY
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     SECTION 1
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        Before anything else…
+    </h2>
+
+    <p>
+        Baby,
+    </p>
+
+    <p>
+        I know I made a mistake.
+    </p>
+
+    <p>
+        And I know that what I said and the way I behaved came at a time when you were already stressed and dealing with so many things. Instead of being the person who should have given you peace, I put my own thoughts, worries and baggage onto you.
+    </p>
+
+    <p>
+        I knew you were already carrying so much, and yet I added something more to it.
+    </p>
+
+    <div class="emphasis">
+        For that, <strong>I am genuinely, deeply sorry.</strong>
+    </div>
+
+    <p>
+        I don't want to make excuses for myself. I don't want to explain my intentions and use them to make what happened seem smaller than it was.
+    </p>
+
+    <p>
+        Because the truth is simple—
+    </p>
+
+    <div class="emphasis">
+        <strong>I hurt my Baby.</strong>
+    </div>
+
+    <p>
+        And that is something I wish I could take back.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     SECTION 2
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        I know I have said this before…
+    </h2>
+
+    <p>
+        This is probably the hardest part for me to admit.
+    </p>
+
+    <p>
+        I've told you before that there are things I need to understand better. I've told you that I need to know what to say, when to say it, and when my thoughts should simply stay thoughts.
+    </p>
+
+    <p>
+        And then, when the moment actually came…
+    </p>
+
+    <div class="emphasis">
+        <strong>I failed to do what I had said I would do.</strong>
+    </div>
+
+    <p>
+        I overthought things I didn't need to overthink.
+    </p>
+
+    <p>
+        I let my mind create problems where there didn't need to be any.
+    </p>
+
+    <p>
+        And instead of being your safe place, I became another reason for you to feel upset.
+    </p>
+
+    <p>
+        I am sorry, Baby.
+    </p>
+
+    <p>
+        Not just for what I said.
+    </p>
+
+    <p>
+        But for making you feel like you had to carry my emotions when you were already carrying enough of your own.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     APPLICATION SECTION
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        And then there was your application…
+    </h2>
+
+    <p>
+        This one hurts me even more because
+        <strong class="bold">you trusted me with something that mattered to you.</strong>
+    </p>
+
+    <p>
+        You gave me your work because you trusted that I would handle it carefully. You trusted me because you believed that when something was in my hands, I would make sure it was done properly and that I wouldn't make a careless mistake.
+    </p>
+
+    <p>
+        But I did.
+    </p>
+
+    <p>
+        I applied my mind where I didn't need to. I made an error that unfortunately couldn't be rectified, and I know that the consequences of that mistake were yours to face—not mine.
+    </p>
+
+    <div class="emphasis">
+        And I am truly sorry for that.
+    </div>
+
+    <p>
+        I know saying
+        <em>"I didn't mean to"</em>
+        doesn't change anything.
+    </p>
+
+    <p>
+        The fact that I had good intentions doesn't make the mistake any smaller.
+    </p>
+
+    <div class="emphasis">
+        <strong>
+            You trusted me, and I should have been more careful with that trust.
+        </strong>
+    </div>
+
+    <h3>
+        What I will do differently
+    </h3>
+
+    <p>
+        From now on, I don't want to assume things on my own when it comes to something important to you.
+    </p>
+
+    <p>
+        If even the smallest doubt comes into my mind,
+        <strong class="bold">I will ask you.</strong>
+    </p>
+
+    <p>
+        If something isn't completely clear,
+        <strong class="bold">I will tell you.</strong>
+    </p>
+
+    <p>
+        If I am unsure about even one small detail,
+        <strong class="bold">I will not simply apply my own understanding and move ahead.</strong>
+    </p>
+
+    <div class="promise-card">
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will ask.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will confirm.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will make sure.</span>
+        </div>
+
+    </div>
+
+    <p style="margin-top:35px;">
+        Because when you entrust something to me, I want you to feel that it is safe with me—not that you have to worry about what I might do with it.
+    </p>
+
+    <p>
+        I know I cannot undo the mistake I already made.
+    </p>
+
+    <p>
+        But I can make sure I learn from it.
+    </p>
+
+    <div class="emphasis">
+        And this is one lesson I will carry with me.
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LOVE SECTION
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        But there is something I want you to know…
+    </h2>
+
+    <p>
+        Among all the things I could say to you right now, there is one thing I hope you remember.
+    </p>
+
+    <div class="emphasis">
+        <strong>I love you.</strong>
+    </div>
+
+    <p>
+        Not just when everything is beautiful.
+    </p>
+
+    <p>
+        Not just when we're laughing.
+    </p>
+
+    <p>
+        Not just when we're talking for hours.
+    </p>
+
+    <p>
+        I love you in the ordinary moments too.
+    </p>
+
+    <p>
+        The random conversations.
+    </p>
+
+    <p>
+        The little "good morning" and "good night" messages.
+    </p>
+
+    <p>
+        The moments when you don't even realise how cute you are.
+    </p>
+
+    <p>
+        The moments when you need someone to simply listen.
+    </p>
+
+    <p>
+        And even the moments when you're angry with me.
+    </p>
+
+    <p>
+        And I want to learn how to love you
+        <strong class="bold">better</strong>,
+        especially in the moments when I don't get things right.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     WHAT I SHOULD HAVE BEEN
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        What I should have been
+    </h2>
+
+    <p>
+        When the world is already making you tired…
+    </p>
+
+    <div class="emphasis">
+        I should be the person who makes things a little lighter.
+    </div>
+
+    <p>
+        When you're stressed…
+    </p>
+
+    <p>
+        I should be the person who doesn't add another weight to your heart.
+    </p>
+
+    <p>
+        When you're upset…
+    </p>
+
+    <p>
+        I should listen before I react.
+    </p>
+
+    <p>
+        When my mind starts overthinking…
+    </p>
+
+    <p>
+        I should learn to pause.
+    </p>
+
+    <p>
+        And when I don't know what to say…
+    </p>
+
+    <div class="emphasis">
+        sometimes I should simply hold your hand and say,
+        <br><br>
+        <strong>"I'm here, Baby."</strong>
+    </div>
+
+    <p>
+        That's the person I want to become for you.
+    </p>
+
+    <p>
+        Not through another beautiful promise.
+    </p>
+
+    <p>
+        Through repetition.
+    </p>
+
+    <p>
+        Through patience.
+    </p>
+
+    <p>
+        Through the little things.
+    </p>
+
+    <p>
+        Through the moments you won't even notice because I'll simply be doing them.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     PROMISE SECTION
+========================= -->
+
+<section class="reveal">
+
+    <h2>
+        So here's my promise…
+    </h2>
+
+    <p>
+        I won't promise you that I'll suddenly become perfect.
+    </p>
+
+    <p>
+        Because I'm not.
+    </p>
+
+    <p>
+        But I can promise you this:
+    </p>
+
+    <div class="promise-card">
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span><strong>I will learn.</strong></span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will think before I speak.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will learn when to explain and when to listen.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will learn when my thoughts are worth sharing and when they are simply unnecessary overthinking.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>I will not make you responsible for carrying emotions that belong to me.</span>
+        </div>
+
+        <div class="promise-item">
+            <span class="promise-heart">♡</span>
+            <span>When I make a mistake, I will not hide behind an excuse.</span>
+        </div>
+
+    </div>
+
+    <p style="margin-top:35px;">
+        I'll own it.
+    </p>
+
+    <p>
+        I'll correct it.
+    </p>
+
+    <p>
+        And I'll show you that I've learned from it.
+    </p>
+
+    <div class="emphasis">
+        Because this time, Baby,
+        <br><br>
+        <strong>I don't want my words to be the proof.</strong>
+        <br><br>
+        I want my actions to be.
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final reveal">
+
+    <div class="final-love">
+        I love you, Mittali. ❤️
+    </div>
+
+    <p>
+        And this time, I'll let my actions tell you the rest.
+    </p>
+
+    <div class="signature">
+        From your Pookie Pie. ❤️
+    </div>
+
+    <div class="song-line">
+        Thinking of You — always.
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    Made with love, honesty & a promise to do better. ❤️
+
+</footer>
+
+
+<!-- =========================
+     MUSIC BUTTON
+========================= -->
+
+<button
+    class="music-button"
+    id="musicButton"
+    aria-label="Play music"
+>
+    ♫
+</button>
+
+<!--
+IMPORTANT:
+Put your music file in the SAME folder as index.html.
+
+Example:
+
+index.html
+a_romantic_cozy_scrapbook_style_apology_letter_w.png
+music.mp3
+
+Then uncomment the audio section below.
+-->
+
+<audio id="backgroundMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+const observer =
+    new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+
+revealElements.forEach((element) => {
+
+    observer.observe(element);
+
+});
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+const music =
+    document.getElementById("backgroundMusic");
+
+const musicButton =
+    document.getElementById("musicButton");
+
+let playing = false;
+
+musicButton.addEventListener("click", () => {
+
+    if (!playing) {
+
+        music.play();
+
+        musicButton.innerHTML = "❚❚";
+
+        playing = true;
+
+    } else {
+
+        music.pause();
+
+        musicButton.innerHTML = "♫";
+
+        playing = false;
+
+    }
+
+});
+
+
+/* =========================
+   HERO FIRST ANIMATION
+========================= */
+
+window.addEventListener("load", () => {
+
+    document
+        .querySelector(".hero-card")
+        .classList.add("show");
+
+});
+
+</script>
+
+</body>
+</html>
